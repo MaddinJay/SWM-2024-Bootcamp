@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <INCLUDES>
+    <SOBJ_NAME>LZOB_FB_FG2_002_AUFG3_W6TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOB_FB_FG2_002_AUFG3_W6</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_FB_FUBA_ADRESS</FUNCNAME>
+    </item>
+    <item>
+     <FUNCNAME>Z_FB_FUBA_KUNDNR</FUNCNAME>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_NAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>LT_KUND</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STANDARD TABLE</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_NAME</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LT_KUND</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_FB_FUBA_PERSON</FUNCNAME>
+    </item>
+    <item>
+     <FUNCNAME>Z_FB_FUBA_VDOC</FUNCNAME>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

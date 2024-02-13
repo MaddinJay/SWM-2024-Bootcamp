@@ -1,0 +1,3 @@
+FUNCTION-POOL ZFD_FG_ABAP_GRUNDKURS.        "MESSAGE-ID ..
+
+* INCLUDE LZFD_FG_ABAP_GRUNDKURSD...         " Local class definition

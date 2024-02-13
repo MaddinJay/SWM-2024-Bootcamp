@@ -1,0 +1,24 @@
+CLASS zlv_waermesensor DEFINITION
+  PUBLIC
+*  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    INTERFACES ZLV_Isensor.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zlv_waermesensor IMPLEMENTATION.
+  METHOD zlv_isensor~aktivieren.
+
+  ENDMETHOD.
+
+  METHOD zlv_isensor~lesen.
+
+  ENDMETHOD.
+
+ENDCLASS.

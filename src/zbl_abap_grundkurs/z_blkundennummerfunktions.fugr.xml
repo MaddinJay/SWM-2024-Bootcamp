@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <INCLUDES>
+    <SOBJ_NAME>LZ_BLKUNDENNUMMERFUNKTIONSTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZ_BLKUNDENNUMMERFUNKTIONS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_BLFUNKTIONSBAUSTEINADDR</FUNCNAME>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_KUNNR</PARAMETER>
+       <TYP>KNA1-KUNNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_ADDRESS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ADRC</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_KUNNR</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_ADDRESS</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_BLFUNKTIONSBAUSTEINPERSO</FUNCNAME>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

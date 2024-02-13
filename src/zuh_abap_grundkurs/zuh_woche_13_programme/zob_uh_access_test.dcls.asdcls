@@ -1,0 +1,11 @@
+@EndUserText.label: 'Übung ACCESS'
+@MappingRole: true
+define role ZOB_UH_ACCESS_TEST {
+  grant
+    select
+      on
+        ZOB_CDS_UH_BU_PARTNER
+          where
+            ID2 = '0017100001';
+  }
+

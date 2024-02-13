@@ -1,0 +1,25 @@
+CLASS zea_waermesensor DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+  INTERFACES ZEA_ISENSOR.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zea_waermesensor IMPLEMENTATION.
+  METHOD zea_isensor~aktivieren.
+
+  ENDMETHOD.
+
+  METHOD zea_isensor~lesen.
+
+  ENDMETHOD.
+
+ENDCLASS.

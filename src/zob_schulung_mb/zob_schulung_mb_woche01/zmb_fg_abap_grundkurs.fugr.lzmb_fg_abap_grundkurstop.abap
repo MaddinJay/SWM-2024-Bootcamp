@@ -1,0 +1,3 @@
+FUNCTION-POOL ZMB_FG_ABAP_GRUNDKURS.        "MESSAGE-ID ..
+
+* INCLUDE LZMB_FG_ABAP_GRUNDKURSD...         " Local class definition

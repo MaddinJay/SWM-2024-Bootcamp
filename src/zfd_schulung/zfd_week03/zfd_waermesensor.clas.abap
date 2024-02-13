@@ -1,0 +1,23 @@
+CLASS zfd_waermesensor DEFINITION
+  PUBLIC
+
+  CREATE PUBLIC.
+
+  PUBLIC SECTION.
+    INTERFACES zfd_isensor.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zfd_waermesensor IMPLEMENTATION.
+  METHOD zfd_isensor~aktivieren.
+
+  ENDMETHOD.
+
+  METHOD zfd_isensor~lesen.
+
+  ENDMETHOD.
+
+ENDCLASS.

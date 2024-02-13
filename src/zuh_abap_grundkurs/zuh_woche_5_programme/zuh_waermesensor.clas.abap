@@ -1,0 +1,22 @@
+CLASS zuh_waermesensor DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    INTERFACES zuh_isensor.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+CLASS zuh_waermesensor IMPLEMENTATION.
+  METHOD zuh_isensor~aktivieren.
+
+  ENDMETHOD.
+
+  METHOD zuh_isensor~lesen.
+
+  ENDMETHOD.
+
+ENDCLASS.

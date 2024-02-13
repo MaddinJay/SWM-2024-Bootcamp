@@ -1,0 +1,11 @@
+@EndUserText.label: 'Zugriffskontrolle BU Partner'
+@MappingRole: true
+define role ZOB_DCL_M0_BU_PARTNER {
+  grant
+    select
+      on
+        ZOB_CDS_MN_BU_PARTNER
+          where
+            Partner1 = '0017100001';
+            
+}

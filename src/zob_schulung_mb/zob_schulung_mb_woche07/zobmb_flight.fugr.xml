@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <INCLUDES>
+    <SOBJ_NAME>LZOBMB_FLIGHTTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOBMB_FLIGHT</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOBMB_FLIGHT_CHANGE_CUST</FUNCNAME>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IP_KUNDENNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KNA1-KUNNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EPT_NAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STANDARD TABLE</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IP_KUNDENNR</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EPT_NAME</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOBMB_FLIGHT_GET_CUSTOMER</FUNCNAME>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IP_KUNDENNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KNA1-KUNNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EPT_NAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STANDARD TABLE</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IP_KUNDENNR</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EPT_NAME</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,15 @@
+CLASS zmb_lcl_passenger_plane DEFINITION
+  PUBLIC
+  INHERITING FROM zmb_lcl_airplane
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zmb_lcl_passenger_plane IMPLEMENTATION.
+ENDCLASS.

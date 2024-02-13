@@ -1,0 +1,20 @@
+CLASS zcl_ea_hello_abap DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+  METHODS get_info RETURNING VALUE(rv_hello_abap) TYPE string.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_ea_hello_abap IMPLEMENTATION.
+  METHOD get_info.
+rv_hello_abap = 'HELLO ABAP!'.
+  ENDMETHOD.
+
+ENDCLASS.

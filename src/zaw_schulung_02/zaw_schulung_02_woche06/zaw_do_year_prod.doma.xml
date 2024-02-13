@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DOMA" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD01V>
+    <DOMNAME>ZAW_DO_YEAR_PROD</DOMNAME>
+    <DATATYPE>NUMC</DATATYPE>
+    <LENG>000004</LENG>
+    <OUTPUTLEN>000004</OUTPUTLEN>
+    <VALEXI>X</VALEXI>
+   </DD01V>
+   <DD07V_TAB>
+    <DD07V>
+     <VALPOS>0001</VALPOS>
+     <DOMVALUE_L>2020</DOMVALUE_L>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0002</VALPOS>
+     <DOMVALUE_L>2021</DOMVALUE_L>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0003</VALPOS>
+     <DOMVALUE_L>2022</DOMVALUE_L>
+    </DD07V>
+    <DD07V>
+     <VALPOS>0004</VALPOS>
+     <DOMVALUE_L>2023</DOMVALUE_L>
+    </DD07V>
+   </DD07V_TAB>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD01_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Produktionsjahr des Autos</DDTEXT>
+    </item>
+   </DD01_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

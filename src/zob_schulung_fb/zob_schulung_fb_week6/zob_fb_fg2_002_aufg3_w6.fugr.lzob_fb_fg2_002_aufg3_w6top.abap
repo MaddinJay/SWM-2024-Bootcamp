@@ -1,0 +1,3 @@
+FUNCTION-POOL ZOB_FB_FG2_002_AUFG3_W6.      "MESSAGE-ID ..
+
+* INCLUDE LZOB_FB_FG2_002_AUFG3_W6D...       " Local class definition

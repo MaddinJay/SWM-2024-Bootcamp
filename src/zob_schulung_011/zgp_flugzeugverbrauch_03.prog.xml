@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZGP_FLUGZEUGVERBRAUCH_03</NAME>
+    <DBAPL>S</DBAPL>
+    <SUBC>1</SUBC>
+    <FIXPT>X</FIXPT>
+    <LDBNAME>D$S</LDBNAME>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Auswahl Flugverbindung</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Gruppenarbeit Flugzeugverbrauch Gruppe 03</ENTRY>
+       <LENGTH>41</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_CARRID</KEY>
+       <ENTRY>ID der Fluggesellschaft</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_CONNID</KEY>
+       <ENTRY>Wählen Sie die Flugverbindung</ENTRY>
+       <LENGTH>37</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_FLDATE</KEY>
+       <ENTRY>Flugdatum</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_PREIS</KEY>
+       <ENTRY>Preis pro kg</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>
