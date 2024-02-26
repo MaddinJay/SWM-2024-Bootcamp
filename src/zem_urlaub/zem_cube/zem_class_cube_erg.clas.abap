@@ -56,10 +56,10 @@ CLASS zem_class_cube_erg IMPLEMENTATION.
 
 
     DATA lv_count TYPE i.
-    lv_count = ( sy-uzeit+3(1) + sy-uzeit+4(1) +  sy-uzeit+4(2) ) + 1.
+    lv_count = ( sy-uzeit(2) + sy-uzeit+3(1) + sy-uzeit+4(1) +  sy-uzeit+4(2) ) + 1.
 
 
-    DO 30 TIMES.
+    DO 80 TIMES.
 
       lt_tabelle = VALUE #( BASE lt_tabelle
                         ( name = iv_auge1 )

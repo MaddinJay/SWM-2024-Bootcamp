@@ -17,7 +17,7 @@
    <DD04_TEXTS>
     <item>
      <DDLANGUAGE>D</DDLANGUAGE>
-     <DDTEXT>Datenelement für Feld Zählernummer</DDTEXT>
+     <DDTEXT>Zähler Nr.</DDTEXT>
      <SCRTEXT_S>ZHLNR</SCRTEXT_S>
      <SCRTEXT_M>Zähler Nr</SCRTEXT_M>
      <SCRTEXT_L>Zählernummer</SCRTEXT_L>

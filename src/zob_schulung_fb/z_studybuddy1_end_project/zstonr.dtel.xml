@@ -5,6 +5,7 @@
    <DD04V>
     <ROLLNAME>ZSTONR</ROLLNAME>
     <DOMNAME>ZKUNDEN_STO</DOMNAME>
+    <HEADLEN>55</HEADLEN>
     <SCRLEN1>06</SCRLEN1>
     <SCRLEN2>11</SCRLEN2>
     <SCRLEN3>14</SCRLEN3>
@@ -18,6 +19,7 @@
     <item>
      <DDLANGUAGE>D</DDLANGUAGE>
      <DDTEXT>Störungsnummer</DDTEXT>
+     <REPTEXT>Störungsnummer</REPTEXT>
      <SCRTEXT_S>STO_NR</SCRTEXT_S>
      <SCRTEXT_M>Störungs Nr</SCRTEXT_M>
      <SCRTEXT_L>Störungsnummer</SCRTEXT_L>

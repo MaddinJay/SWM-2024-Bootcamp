@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZUH_KUNDENINFO</ROLLNAME>
+    <DOMNAME>ZUH_CAHR1</DOMNAME>
+    <HEADLEN>20</HEADLEN>
+    <SCRLEN1>02</SCRLEN1>
+    <SCRLEN2>10</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>D</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Wurde der Kunde informiert</DDTEXT>
+     <REPTEXT>Kundeninfo</REPTEXT>
+     <SCRTEXT_S>KF</SCRTEXT_S>
+     <SCRTEXT_M>Kundeninfo</SCRTEXT_M>
+     <SCRTEXT_L>Kundeninfo</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,3424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ECTD" serializer_version="v1.0.0">
+ <VERSIONS>
+  <VERSION>
+   <ECTD VERSION="1.5">
+    <ATTRIBUTES>
+     <ETOBJ_GNDT>
+      <VERSION>00000001</VERSION>
+      <TWB_TITLE>Setup MDC Data for BP</TWB_TITLE>
+      <SOFTCOMP/>
+      <TWB_DEP_RF/>
+      <TWB_DEP_RT/>
+      <TWB_STATUS>X</TWB_STATUS>
+      <TWB_RELE>N</TWB_RELE>
+      <FUSER></FUSER>
+      <FDATE></FDATE>
+      <LUSER></LUSER>
+      <LDATE></LDATE>
+      <LTIME></LTIME>
+      <REL_BAS_F/>
+      <REL_BAS_T/>
+      <SERVICE/>
+      <PVNR/>
+      <BACKUP/>
+     </ETOBJ_GNDT>
+     <ETOBJNOVER>
+      <NAME>ZMDC_SETUP_BP</NAME>
+      <TYPE>ECTD</TYPE>
+      <TWB_RESP></TWB_RESP>
+      <TWB_DISTL>B</TWB_DISTL>
+      <TWB_EUBOBJ/>
+      <TWB_EUTYPE/>
+      <DEVCLASS></DEVCLASS>
+      <MASTERLANG>E</MASTERLANG>
+      <TADIR_RESP></TADIR_RESP>
+      <FRANGE>CA-MDG-CMP</FRANGE>
+      <BCSET_MODE/>
+      <API_MODE/>
+      <COL_TSTOBJDATA/>
+      <NO_TRANSLATION/>
+     </ETOBJNOVER>
+     <ETOBJ_DOC>
+      <SEARCH_1/>
+      <SEARCH_2/>
+      <SEARCH_3/>
+      <SEARCH_4/>
+      <SEARCH_5/>
+      <SEARCH_6/>
+      <SEARCH_7/>
+      <SEARCH_8/>
+      <SEARCH_9/>
+      <SEARCH_10/>
+      <S_DOC_ID/>
+      <S_OBJ_ID/>
+      <S_DOC_TITL/>
+     </ETOBJ_DOC>
+     <ETOBJ_CNST>
+      <TWB_DEP_S/>
+      <TWB_DEPV_S/>
+      <TWB_DEP_L/>
+      <TWB_DEPV_L/>
+      <TWB_USE_A/>
+      <TWB_USE_P/>
+      <TWB_USE_H/>
+      <TWB_USE_E/>
+      <REUSE/>
+      <TWB_DEP_C/>
+      <TWB_DEP_VC/>
+      <TWB_DEP_F/>
+      <TWB_DEP_VF/>
+      <TWB_DEP_P/>
+      <TWB_DEP_VP/>
+      <TWB_DEP_DB/>
+      <TWB_DEPVDB/>
+      <TWB_WKREQ>0.0</TWB_WKREQ>
+      <TWB_WKUNIT>MIN</TWB_WKUNIT>
+      <TWB_PRIO>3</TWB_PRIO>
+     </ETOBJ_CNST>
+     <ETSC_TSYS>
+      <SYSTEMDATA/>
+      <TESTSYSTEM/>
+     </ETSC_TSYS>
+     <ETSYS_COMP_TABTYPE/>
+     <ETSYS_REL_TABTYPE/>
+     <ETBF_OBJ_TABTYPE/>
+     <ETBF_VER_TABTYPE/>
+    </ATTRIBUTES>
+    <PARAMETERS>
+     <ETPAR_GUIX>
+      <item>
+       <PNAME>BUT000_PRC</PNAME>
+       <PTYP>V</PTYP>
+       <PDESC>List Of Process Records For OTC 147, Table BUT000</PDESC>
+       <PINDEX>0001</PINDEX>
+       <XMLREF_TYP>D</XMLREF_TYP>
+       <PSTRUC_TYP>T</PSTRUC_TYP>
+       <PREF_NAME>MDC_TT_BUT000_PRC</PREF_NAME>
+       <PDATLEN>0000</PDATLEN>
+       <PINTLEN>000000</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0001</SORT_LNR>
+       <PREF_NAME2>MDC_TT_BUT000_PRC</PREF_NAME2>
+       <VALUE>&lt;INITIAL&gt;</VALUE>
+       <VAL_TYPE>T</VAL_TYPE>
+       <TAB_INDEX>0</TAB_INDEX>
+       <DEEP_STRU>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.sap.com/2003/05/eCATT/ddic" version="1.0">
+         <xsd:complexType name="MDC_TT_BUT000_PRC">
+          <annotation>
+           <documentation>I==O==C=T=K==D=MDC_TT_BUT000_PRC=A=h=L=000000=doc=List Of Process Records For OTC 147, Table BUT000</documentation>
+          </annotation>
+          <sequence>
+           <element name="item" type="BUT000_PRC" minOccurs="0" maxOccurs="unbounded"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="BUT000_PRC">
+          <annotation>
+           <documentation>I==O==C=S=K==D=BUT000_PRC=A=u=L=000000=doc=Master Data Conso</documentation>
+          </annotation>
+          <sequence>
+           <element name="CLIENT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MANDT=A=C=L=000003=doc=Client</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PROCESS_ID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_PROCESS_ID=A=N=L=000012=doc=Master Data C</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="12"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PROCESS_STEP_NO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_PROCESS_STEP_NO=A=N=L=000004=doc=Master D</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_SYSTEM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_BUSINESS_SYSTEM=A=C=L=000060=doc=Source S</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="60"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_ID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_SOURCE_ID=A=C=L=000060=doc=Master Data Co</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="60"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PARTNER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_PARTNER=A=C=L=000010=doc=Business Partner N</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TYPE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_TYPE=A=C=L=000001=doc=Business Partner Cate</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BPKIND" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_BPKIND=A=C=L=000004=doc=Business Partner Ty</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BU_GROUP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_GROUP=A=C=L=000004=doc=Business Partner Gro</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BPEXT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_BPEXT=A=C=L=000020=doc=Business Partner Num</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BU_SORT1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_SORT1=A=C=L=000020=doc=Search term 1 for bu</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BU_SORT2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_SORT2=A=C=L=000020=doc=Search term 2 for bu</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_SOURCE=A=C=L=000004=doc=Data Origin Types</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TITLE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_TITLE=A=C=L=000004=doc=Form-of-Address Key</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="XDELE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_XDELE=A=C=L=000001=doc=Central Archiving Fl</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="XBLCK" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_XBLCK=A=C=L=000001=doc=Central Block for Bu</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="AUGRP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_AUGRP=A=C=L=000004=doc=Authorization Group</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TITLE_LET" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_TITLE_LET=A=C=L=000050=doc=Salutation</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="50"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BU_LOGSYS" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=LOGSYS=A=C=L=000010=doc=Logical system</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CONTACT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_CONTACT=A=C=L=000001=doc=Business Partner:</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NOT_RELEASED" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_XNOT_RELEASED=A=C=L=000001=doc=Indicator: N</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NOT_LG_COMPETENT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NOT_LEG_COMPETENT=A=C=L=000001=doc=Indicato</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PRINT_MODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_PRINT_MODE=A=C=L=000001=doc=Business Partne</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BP_EEW_DUMMY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DUMMY=A=C=L=000001=doc=Dummy function in lengt</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="RATE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DPR_TV_RATE=A=C=L=000015=doc=Cost Rate/Revenue</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="15"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME_ORG1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NAMEOR1=A=C=L=000040=doc=Name 1 of organiza</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME_ORG2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NAMEOR2=A=C=L=000040=doc=Name 2 of organiza</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME_ORG3" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NAMEOR3=A=C=L=000040=doc=Name 3 of organiza</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME_ORG4" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NAMEOR4=A=C=L=000040=doc=Name 4 of organiza</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="LEGAL_ENTY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_LEGENTY=A=C=L=000002=doc=BP: Legal form of</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="2"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="IND_SECTOR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_INDSECT=A=C=L=000010=doc=Industry sector</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="LEGAL_ORG" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_LEGAL_ORG=A=C=L=000002=doc=Legal Entity of</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="2"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FOUND_DAT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_FOUND_DAT=A=D=L=000008=doc=Date organizatio</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="....-..-.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="LIQUID_DAT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_LIQUID_DAT=A=D=L=000008=doc=Liquidation dat</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="....-..-.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="LOCATION_1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BBBNR=A=N=L=000007=doc=International location</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="7"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="LOCATION_2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BBSNR=A=N=L=000005=doc=International location</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="5"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="LOCATION_3" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BUBKZ=A=N=L=000001=doc=Check digit for the int</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME_LAST" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NAMEP_L=A=C=L=000040=doc=Last name of busin</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME_FIRST" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NAMEP_F=A=C=L=000040=doc=First name of busi</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME_LST2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NAMEPL2=A=C=L=000040=doc=Other Last Name of</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME_LAST2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_BIRTHNM=A=C=L=000040=doc=Name at birth of b</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAMEMIDDLE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NAMEMID=A=C=L=000040=doc=Middle name or sec</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TITLE_ACA1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_TITLE1=A=C=L=000004=doc=Academic Title: Key</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TITLE_ACA2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_TITLE2=A=C=L=000004=doc=Second academic tit</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TITLE_ROYL" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_TITLES=A=C=L=000004=doc=Name supplement, e.</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PREFIX1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_PREFIX=A=C=L=000004=doc=Name Prefix (Key)</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PREFIX2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_PREFIX2=A=C=L=000004=doc=2nd name prefix (k</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME1_TEXT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NAME1TX=A=C=L=000080=doc=Full Name</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="80"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NICKNAME" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NICKNAM=A=C=L=000040=doc=Nickname of Busine</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="INITIALS" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_INITS=A=C=L=000010=doc=&quot;Middle Initial&quot; or</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAMEFORMAT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FORMAT=A=C=L=000002=doc=Name format</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="2"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAMCOUNTRY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_NAMCTRY=A=C=L=000003=doc=Country for Name F</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="LANGU_CORR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_LANGU_CORR=A=C=L=000001=doc=Business Partne</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="XSEXM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_XSEXM=A=C=L=000001=doc=Selection: Business</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="XSEXF" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_XSEXF=A=C=L=000001=doc=Selection: Business</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BIRTHPL" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_BIRTHPL=A=C=L=000040=doc=Birthplace of busi</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MARST" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_MARST=A=C=L=000001=doc=Marital Status of Bu</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="EMPLO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_EMPLO=A=C=L=000035=doc=Name of Employer of</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="35"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="JOBGR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_JOBGR=A=C=L=000004=doc=Occupation/group</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NATIO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NATIO=A=C=L=000003=doc=Nationality</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CNTAX" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_CNTAX=A=C=L=000003=doc=Obsolete Field</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CNDSC" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_CNDSC=A=C=L=000003=doc=Ctry of Origin: Non-</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PERSNUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_PERSNUM=A=C=L=000010=doc=Person number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="XSEXU" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_XSEXU=A=C=L=000001=doc=Selection: Sex of bu</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="XUBNAME" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_XUBNAME=A=C=L=000012=doc=Obsolete Field</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="12"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BU_LANGU" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_LANGU=A=C=L=000001=doc=Business partner: La</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BIRTHDT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_BIRTHDT=A=D=L=000008=doc=Date of Birth of B</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="....-..-.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DEATHDT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_DEATHDT=A=D=L=000008=doc=Date of death of b</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="....-..-.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PERNO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_PERNO=A=N=L=000008=doc=Personnel Number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="8"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CHILDREN" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_CHILDREN=A=N=L=000002=doc=Obsolete Field</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="2"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MEM_HOUSE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_MEM_HOUSE=A=P=L=000002=doc=Obsolete Field</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="2"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BIRTHDT_STATUS" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_BIRTHDT_STATUS=A=C=L=000001=doc=Date of Bir</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PARTGRPTYP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_GRPTYP=A=C=L=000004=doc=Group type</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME_GRP1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NAMEGR1=A=C=L=000040=doc=Name 1 (group)</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME_GRP2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NAMEGR2=A=C=L=000040=doc=Name 2 (group)</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MC_NAME1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_MCNAME1=A=C=L=000035=doc=Search Help Field</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="35"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MC_NAME2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_MCNAME2=A=C=L=000035=doc=Search Help Field</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="35"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CRUSR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_CRUSR=A=C=L=000012=doc=User who created the</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="12"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CRDAT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_CRDAT=A=D=L=000008=doc=Date on which the ob</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="....-..-.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CRTIM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_CRTIM=A=T=L=000006=doc=Time at which the ob</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="..:..:.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CHUSR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_CHUSR=A=C=L=000012=doc=Last user to change</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="12"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CHDAT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_CHDAT=A=D=L=000008=doc=Date when object was</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="....-..-.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CHTIM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_CHTIM=A=T=L=000006=doc=Time at which object</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="..:..:.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PARTNER_GUID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_PARTNER_GUID=A=X=L=000016=doc=Business Part</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="base64Binary">
+              <length value="16"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADDRCOMM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_ADDRCOMM=A=C=L=000010=doc=Address Number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TD_SWITCH" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_TD_SWITCH=A=C=L=000001=doc=Planned Change D</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="IS_ORG_CENTRE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_IS_ORG_CENTRE=A=C=L=000001=doc=Indicator: B</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DB_KEY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=SYSUUID_X=A=X=L=000016=doc=UUID in X form (bin</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="base64Binary">
+              <length value="16"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="VALID_FROM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_BP_VALID_FROM=A=P=L=000015=doc=Validity Sta</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="15"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="VALID_TO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_BP_VALID_TO=A=P=L=000015=doc=Validity End B</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="15"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="XPCPT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_XPCPT=A=C=L=000001=doc=Business Purpose Com</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NATPERS" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_NATURAL_PERSON=A=C=L=000001=doc=Business Pa</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="VALIDATION_STATUS" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_VALIDATION_STATUS=A=C=L=000001=doc=Master</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_RECENCY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_RECENCY=A=P=L=000015=doc=Master Data Conso</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="15"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_FILTER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_SOURCE_FILTER=A=C=L=000040=doc=Master Data</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_MODIFIED" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_SOURCE_MODIFIED=A=C=L=000001=doc=Indicator</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_MODIFICATION_BLIP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_MODIFICATION_BLIP=A=X=L=000064=doc=Modific</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="base64Binary">
+              <length value="64"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_INDEX" minOccurs="0" type="int">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_SOURCE_INDEX=A=I=L=000010=doc=Index of rec</documentation>
+            </annotation>
+           </element>
+           <element name="PAR_REL" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BP_PAR_REL=A=C=L=000001=doc=Business Partner R</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BP_SORT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BP_SORT_PH=A=C=L=000020=doc=Sort Field for Pho</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="KBANKS" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BANKS=A=C=L=000003=doc=Bank Country Key</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="KBANKL" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BANKK=A=C=L=000015=doc=Bank Keys</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="15"/>
+             </restriction>
+            </simpleType>
+           </element>
+          </sequence>
+         </xsd:complexType>
+        </xsd:schema>
+       </DEEP_STRU>
+       <DEEP_DATA>
+        <ddic:MDC_TT_BUT000_PRC xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic" empty="true">
+         <item>
+          <CLIENT/>
+          <PROCESS_ID/>
+          <PROCESS_STEP_NO/>
+          <SOURCE_SYSTEM/>
+          <SOURCE_ID/>
+          <PARTNER/>
+          <TYPE/>
+          <BPKIND/>
+          <BU_GROUP/>
+          <BPEXT/>
+          <BU_SORT1/>
+          <BU_SORT2/>
+          <SOURCE/>
+          <TITLE/>
+          <XDELE/>
+          <XBLCK/>
+          <AUGRP/>
+          <TITLE_LET/>
+          <BU_LOGSYS/>
+          <CONTACT/>
+          <NOT_RELEASED/>
+          <NOT_LG_COMPETENT/>
+          <PRINT_MODE/>
+          <BP_EEW_DUMMY/>
+          <RATE/>
+          <NAME_ORG1/>
+          <NAME_ORG2/>
+          <NAME_ORG3/>
+          <NAME_ORG4/>
+          <LEGAL_ENTY/>
+          <IND_SECTOR/>
+          <LEGAL_ORG/>
+          <FOUND_DAT/>
+          <LIQUID_DAT/>
+          <LOCATION_1/>
+          <LOCATION_2/>
+          <LOCATION_3/>
+          <NAME_LAST/>
+          <NAME_FIRST/>
+          <NAME_LST2/>
+          <NAME_LAST2/>
+          <NAMEMIDDLE/>
+          <TITLE_ACA1/>
+          <TITLE_ACA2/>
+          <TITLE_ROYL/>
+          <PREFIX1/>
+          <PREFIX2/>
+          <NAME1_TEXT/>
+          <NICKNAME/>
+          <INITIALS/>
+          <NAMEFORMAT/>
+          <NAMCOUNTRY/>
+          <LANGU_CORR/>
+          <XSEXM/>
+          <XSEXF/>
+          <BIRTHPL/>
+          <MARST/>
+          <EMPLO/>
+          <JOBGR/>
+          <NATIO/>
+          <CNTAX/>
+          <CNDSC/>
+          <PERSNUMBER/>
+          <XSEXU/>
+          <XUBNAME/>
+          <BU_LANGU/>
+          <BIRTHDT/>
+          <DEATHDT/>
+          <PERNO/>
+          <CHILDREN/>
+          <MEM_HOUSE/>
+          <BIRTHDT_STATUS/>
+          <PARTGRPTYP/>
+          <NAME_GRP1/>
+          <NAME_GRP2/>
+          <MC_NAME1/>
+          <MC_NAME2/>
+          <CRUSR/>
+          <CRDAT/>
+          <CRTIM/>
+          <CHUSR/>
+          <CHDAT/>
+          <CHTIM/>
+          <PARTNER_GUID/>
+          <ADDRCOMM/>
+          <TD_SWITCH/>
+          <IS_ORG_CENTRE/>
+          <DB_KEY/>
+          <VALID_FROM/>
+          <VALID_TO/>
+          <XPCPT/>
+          <NATPERS/>
+          <VALIDATION_STATUS/>
+          <SOURCE_RECENCY/>
+          <SOURCE_FILTER/>
+          <SOURCE_MODIFIED/>
+          <SOURCE_MODIFICATION_BLIP/>
+          <SOURCE_INDEX/>
+          <PAR_REL/>
+          <BP_SORT/>
+          <KBANKS/>
+          <KBANKL/>
+         </item>
+        </ddic:MDC_TT_BUT000_PRC>
+       </DEEP_DATA>
+      </item>
+      <item>
+       <PNAME>BUT020_PRC</PNAME>
+       <PTYP>V</PTYP>
+       <PDESC>List Of Process Records For OTC 147, Table BUT020</PDESC>
+       <PINDEX>0002</PINDEX>
+       <XMLREF_TYP>D</XMLREF_TYP>
+       <PSTRUC_TYP>T</PSTRUC_TYP>
+       <PREF_NAME>MDC_TT_BUT020_PRC</PREF_NAME>
+       <PDATLEN>0000</PDATLEN>
+       <PINTLEN>000000</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0002</SORT_LNR>
+       <PREF_NAME2>MDC_TT_BUT020_PRC</PREF_NAME2>
+       <VALUE>&lt;INITIAL&gt;</VALUE>
+       <VAL_TYPE>T</VAL_TYPE>
+       <TAB_INDEX>0</TAB_INDEX>
+       <DEEP_STRU>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.sap.com/2003/05/eCATT/ddic" version="1.0">
+         <xsd:complexType name="MDC_TT_BUT020_PRC">
+          <annotation>
+           <documentation>I==O==C=T=K==D=MDC_TT_BUT020_PRC=A=h=L=000000=doc=List Of Process Records For OTC 147, Table BUT020</documentation>
+          </annotation>
+          <sequence>
+           <element name="item" type="BUT020_PRC" minOccurs="0" maxOccurs="unbounded"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="BUT020_PRC">
+          <annotation>
+           <documentation>I==O==C=S=K==D=BUT020_PRC=A=u=L=000000=doc=Master Data Conso</documentation>
+          </annotation>
+          <sequence>
+           <element name="CLIENT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MANDT=A=C=L=000003=doc=Client</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PROCESS_ID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_PROCESS_ID=A=N=L=000012=doc=Master Data C</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="12"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PROCESS_STEP_NO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_PROCESS_STEP_NO=A=N=L=000004=doc=Master D</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_SYSTEM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_BUSINESS_SYSTEM=A=C=L=000060=doc=Source S</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="60"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_ID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_SOURCE_ID=A=C=L=000060=doc=Master Data Co</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="60"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_ADDRNUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=AD_ADDRNUM=A=C=L=000010=doc=Address Number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PARTNER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_PARTNER=A=C=L=000010=doc=Business Partner N</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADDRNUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_ADDRNUM=A=C=L=000010=doc=Address Number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="XDFADR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_XDFADR=A=C=L=000001=doc=Indicator: Address</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADEXT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_ADEXT=A=C=L=000020=doc=Address number in ex</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NATION" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_NATION=A=C=L=000001=doc=Version ID for Inte</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="GUID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=SYSUUID_C=A=C=L=000032=doc=UUID in character f</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="32"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MOVE_ADDR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_MOVE_ADDR=A=C=L=000010=doc=Number of Move T</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DATE_FROM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_DATE_OBSOLETE=A=D=L=000008=doc=Date Obsolet</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="....-..-.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADDRESS_GUID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_ADDRESS_GUID=A=X=L=000016=doc=GUID of a Bus</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="base64Binary">
+              <length value="16"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADDR_VALID_FROM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_ADDR_VALID_FROM=A=P=L=000015=doc=Validity S</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="15"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADDR_VALID_TO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_ADDR_VALID_TO=A=P=L=000015=doc=Validity End</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="15"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADDR_MOVE_DATE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_ADDR_MOVE_DATE=A=P=L=000015=doc=Date of Mov</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="15"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_RECENCY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_RECENCY=A=P=L=000015=doc=Master Data Conso</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="15"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_MODIFIED" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_SOURCE_MODIFIED=A=C=L=000001=doc=Indicator</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_MODIFICATION_BLIP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_MODIFICATION_BLIP=A=X=L=000064=doc=Modific</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="base64Binary">
+              <length value="64"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_INDEX" minOccurs="0" type="int">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_SOURCE_INDEX=A=I=L=000010=doc=Index of rec</documentation>
+            </annotation>
+           </element>
+          </sequence>
+         </xsd:complexType>
+        </xsd:schema>
+       </DEEP_STRU>
+       <DEEP_DATA>
+        <ddic:MDC_TT_BUT020_PRC xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic" empty="true">
+         <item>
+          <CLIENT/>
+          <PROCESS_ID/>
+          <PROCESS_STEP_NO/>
+          <SOURCE_SYSTEM/>
+          <SOURCE_ID/>
+          <SOURCE_ADDRNUMBER/>
+          <PARTNER/>
+          <ADDRNUMBER/>
+          <XDFADR/>
+          <ADEXT/>
+          <NATION/>
+          <GUID/>
+          <MOVE_ADDR/>
+          <DATE_FROM/>
+          <ADDRESS_GUID/>
+          <ADDR_VALID_FROM/>
+          <ADDR_VALID_TO/>
+          <ADDR_MOVE_DATE/>
+          <SOURCE_RECENCY/>
+          <SOURCE_MODIFIED/>
+          <SOURCE_MODIFICATION_BLIP/>
+          <SOURCE_INDEX/>
+         </item>
+        </ddic:MDC_TT_BUT020_PRC>
+       </DEEP_DATA>
+      </item>
+      <item>
+       <PNAME>BUT_ADRC_PRC</PNAME>
+       <PTYP>V</PTYP>
+       <PDESC>List Of Process Records For OTC 147, Table ADRC</PDESC>
+       <PINDEX>0005</PINDEX>
+       <XMLREF_TYP>D</XMLREF_TYP>
+       <PSTRUC_TYP>T</PSTRUC_TYP>
+       <PREF_NAME>MDC_TT_BUT_ADRC_PRC</PREF_NAME>
+       <PDATLEN>0000</PDATLEN>
+       <PINTLEN>000000</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0003</SORT_LNR>
+       <PREF_NAME2>MDC_TT_BUT_ADRC_PRC</PREF_NAME2>
+       <VALUE>&lt;INITIAL&gt;</VALUE>
+       <VAL_TYPE>T</VAL_TYPE>
+       <TAB_INDEX>0</TAB_INDEX>
+       <DEEP_STRU>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.sap.com/2003/05/eCATT/ddic" version="1.0">
+         <xsd:complexType name="MDC_TT_BUT_ADRC_PRC">
+          <annotation>
+           <documentation>I==O==C=T=K==D=MDC_TT_BUT_ADRC_PRC=A=h=L=000000=doc=List Of Process Records For OTC 147, Table ADRC</documentation>
+          </annotation>
+          <sequence>
+           <element name="item" type="BUT_ADRC_PRC" minOccurs="0" maxOccurs="unbounded"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="BUT_ADRC_PRC">
+          <annotation>
+           <documentation>I==O==C=S=K==D=BUT_ADRC_PRC=A=u=L=000000=doc=Master Data Con</documentation>
+          </annotation>
+          <sequence>
+           <element name="CLIENT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MANDT=A=C=L=000003=doc=Client</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PROCESS_ID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_PROCESS_ID=A=N=L=000012=doc=Master Data C</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="12"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PROCESS_STEP_NO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_PROCESS_STEP_NO=A=N=L=000004=doc=Master D</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_SYSTEM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_BUSINESS_SYSTEM=A=C=L=000060=doc=Source S</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="60"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_ID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_SOURCE_ID=A=C=L=000060=doc=Master Data Co</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="60"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_ADDRNUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=AD_ADDRNUM=A=C=L=000010=doc=Address Number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DATE_FROM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=AD_DATE_FR=A=D=L=000008=doc=Valid-from date -</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="....-..-.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NATION" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=AD_NATION=A=C=L=000001=doc=Version ID for Int</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADDRNUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_ADDRNUM=A=C=L=000010=doc=Address Number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DATE_TO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_DATE_TO=A=D=L=000008=doc=Valid-to date in c</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="....-..-.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TITLE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_TITLE=A=C=L=000004=doc=Form-of-Address Key</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_NAME1=A=C=L=000040=doc=Name 1</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_NAME2=A=C=L=000040=doc=Name 2</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME3" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_NAME3=A=C=L=000040=doc=Name 3</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME4" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_NAME4=A=C=L=000040=doc=Name 4</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME_TEXT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_NAMETXT=A=C=L=000050=doc=Converted name fie</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="50"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME_CO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_NAME_CO=A=C=L=000040=doc=c/o name</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CITY1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_CITY1=A=C=L=000040=doc=City</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CITY2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_CITY2=A=C=L=000040=doc=District</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CITY_CODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_CITYNUM=A=C=L=000012=doc=City code for city</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="12"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CITYP_CODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_CITYPNM=A=C=L=000008=doc=District code for</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="8"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="HOME_CITY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_CITY3=A=C=L=000040=doc=City (different from</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CITYH_CODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_CITYHNM=A=C=L=000012=doc=Different city for</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="12"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CHCKSTATUS" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_CHECKST=A=C=L=000001=doc=City file test sta</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="REGIOGROUP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=REGIOGROUP=A=C=L=000008=doc=Regional structure</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="8"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="POST_CODE1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_PSTCD1=A=C=L=000010=doc=City postal code</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="POST_CODE2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_PSTCD2=A=C=L=000010=doc=PO Box Postal Code</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="POST_CODE3" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_PSTCD3=A=C=L=000010=doc=Company Postal Code</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PCODE1_EXT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_PST1XT=A=C=L=000010=doc=(Not Supported)City</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PCODE2_EXT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_PST2XT=A=C=L=000010=doc=(Not Supported) PO</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PCODE3_EXT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_PST3XT=A=C=L=000010=doc=(Not Supported) Maj</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PO_BOX" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_POBX=A=C=L=000010=doc=PO Box</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DONT_USE_P" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_NO_USEP=A=C=L=000004=doc=PO Box Address Und</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PO_BOX_NUM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_POBXNUM=A=C=L=000001=doc=Flag: PO Box Witho</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PO_BOX_LOC" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_POBXLOC=A=C=L=000040=doc=PO Box city</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="CITY_CODE2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_CIT2NUM=A=C=L=000012=doc=City PO box code (</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="12"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PO_BOX_REG" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_POBXREG=A=C=L=000003=doc=Region for PO Box</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PO_BOX_CTY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_POBXCTY=A=C=L=000003=doc=PO box country</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="POSTALAREA" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_PSTLAR=A=C=L=000015=doc=(Not Supported) Pos</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="15"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TRANSPZONE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=LZONE=A=C=L=000010=doc=Transportation zone to</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="STREET" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_STREET=A=C=L=000060=doc=Street</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="60"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DONT_USE_S" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_NO_USES=A=C=L=000004=doc=Street Address Und</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="STREETCODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_STRNUM=A=C=L=000012=doc=Street Number for C</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="12"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="STREETABBR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_STRABBR=A=C=L=000002=doc=(Not Supported) Ab</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="2"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="HOUSE_NUM1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_HSNM1=A=C=L=000010=doc=House Number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="HOUSE_NUM2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_HSNM2=A=C=L=000010=doc=House number supplem</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="HOUSE_NUM3" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_HSNM3=A=C=L=000010=doc=(Not supported) Hous</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="STR_SUPPL1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_STRSPP1=A=C=L=000040=doc=Street 2</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="STR_SUPPL2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_STRSPP2=A=C=L=000040=doc=Street 3</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="STR_SUPPL3" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_STRSPP3=A=C=L=000040=doc=Street 4</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="LOCATION" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_LCTN=A=C=L=000040=doc=Street 5</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BUILDING" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_BLDNG=A=C=L=000020=doc=Building (Number or</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLOOR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLOOR=A=C=L=000010=doc=Floor in building</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ROOMNUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_ROOMNUM=A=C=L=000010=doc=Room or Apartment</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="COUNTRY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=LAND1=A=C=L=000003=doc=Country Key</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="LANGU" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=SPRAS=A=C=L=000001=doc=Language Key</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="REGION" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=REGIO=A=C=L=000003=doc=Region (State, Province</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADDR_GROUP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_GROUP=A=C=L=000004=doc=Address Group (Key)</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGGROUPS" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGGP=A=C=L=000001=doc=Flag: There are more</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PERS_ADDR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_PRSADDR=A=C=L=000001=doc=Flag: This is a pe</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SORT1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_SORT1=A=C=L=000020=doc=Search Term 1</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SORT2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_SORT2=A=C=L=000020=doc=Search Term 2</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SORT_PHN" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_SRTPHN=A=C=L=000020=doc=(Not Supported) Pho</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DEFLT_COMM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_COMM=A=C=L=000003=doc=Communication Method</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TEL_NUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_TLNMBR1=A=C=L=000030=doc=First telephone no</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="30"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TEL_EXTENS" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_TLXTNS1=A=C=L=000010=doc=First Telephone No</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FAX_NUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FXNMBR1=A=C=L=000030=doc=First fax no.: dia</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="30"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FAX_EXTENS" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FXXTNS1=A=C=L=000010=doc=First fax no.: ext</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGCOMM2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGCM02=A=C=L=000001=doc=Flag: Telephone nu</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGCOMM3" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGCM03=A=C=L=000001=doc=Flag: Fax number(s</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGCOMM4" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGCM04=A=C=L=000001=doc=Flag: Teletex numb</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGCOMM5" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGCM05=A=C=L=000001=doc=Flag: Telex number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGCOMM6" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGCM06=A=C=L=000001=doc=Flag: E-mail addre</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGCOMM7" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGCM07=A=C=L=000001=doc=Flag: RML (remote</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGCOMM8" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGCM08=A=C=L=000001=doc=Flag: X.400 addres</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGCOMM9" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGCM09=A=C=L=000001=doc=Flag: RFC destinat</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGCOMM10" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGCM10=A=C=L=000001=doc=Flag: Printer defi</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGCOMM11" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGCM11=A=C=L=000001=doc=Flag: SSF defined</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGCOMM12" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGCM12=A=C=L=000001=doc=Flag: URI/FTP addr</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLAGCOMM13" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_FLGCM13=A=C=L=000001=doc=Flag: Pager addres</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADDRORIGIN" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_ORIGINA=A=C=L=000004=doc=(Not Supported) Ad</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MC_NAME1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_MC_NAME=A=C=L=000025=doc=Name (Field NAME1)</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MC_CITY1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_MC_CITY=A=C=L=000025=doc=City name in Upper</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MC_STREET" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_MC_STRT=A=C=L=000025=doc=Street Name in Upp</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="EXTENSION1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_EXTENS1=A=C=L=000040=doc=Extension (only fo</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="EXTENSION2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_EXTENS2=A=C=L=000040=doc=Extension (only fo</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TIME_ZONE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_TZONE=A=C=L=000006=doc=Address time zone</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="6"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TAXJURCODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_TXJCD=A=C=L=000015=doc=Tax Jurisdiction</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="15"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADDRESS_ID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_ADDR_ID=A=C=L=000010=doc=(Not supported) Ph</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="LANGU_CREA" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_LANGUCR=A=C=L=000001=doc=Address record cre</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADRC_UUID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_UUID=A=X=L=000016=doc=UUID Used in the Addr</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="base64Binary">
+              <length value="16"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="UUID_BELATED" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_UUID_BELATED=A=C=L=000001=doc=Indicator: UU</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ID_CATEGORY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_ID_CATEGORY=A=C=L=000001=doc=Category of an</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADRC_ERR_STATUS" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_ERR_STATUS=A=C=L=000001=doc=Error Status of</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PO_BOX_LOBBY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_PO_BOX_LBY=A=C=L=000040=doc=PO Box Lobby</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DELI_SERV_TYPE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_DELIVERY_SERVICE_TYPE=A=C=L=000004=doc=Type</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DELI_SERV_NUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_DELIVERY_SERVICE_NUMBER=A=C=L=000010=doc=Nu</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="COUNTY_CODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_CNTYNUM=A=C=L=000008=doc=County code for co</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="8"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="COUNTY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_COUNTY=A=C=L=000040=doc=County</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TOWNSHIP_CODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_TWSHPNUM=A=C=L=000008=doc=Township code for</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="8"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TOWNSHIP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_TOWNSHIP=A=C=L=000040=doc=Township</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MC_COUNTY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_MC_COUNTY=A=C=L=000025=doc=County name in u</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MC_TOWNSHIP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_MC_TWSHP=A=C=L=000025=doc=Township name in</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="25"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="XPCPT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_XPCPT=A=C=L=000001=doc=Business Purpose Com</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_RECENCY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_RECENCY=A=P=L=000015=doc=Master Data Conso</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="15"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_MODIFIED" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_SOURCE_MODIFIED=A=C=L=000001=doc=Indicator</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_MODIFICATION_BLIP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_MODIFICATION_BLIP=A=X=L=000064=doc=Modific</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="base64Binary">
+              <length value="64"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_INDEX" minOccurs="0" type="int">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_SOURCE_INDEX=A=I=L=000010=doc=Index of rec</documentation>
+            </annotation>
+           </element>
+           <element name="DUNS" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=/SAPHT/RN_DUNS=A=C=L=000009=doc=Dun &amp; Bradstre</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="9"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DUNSP4" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=/SAPHT/RN_DUNSP4=A=C=L=000004=doc=DUNS+4 numbe</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+          </sequence>
+         </xsd:complexType>
+        </xsd:schema>
+       </DEEP_STRU>
+       <DEEP_DATA>
+        <ddic:MDC_TT_BUT_ADRC_PRC xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic" empty="true">
+         <item>
+          <CLIENT/>
+          <PROCESS_ID/>
+          <PROCESS_STEP_NO/>
+          <SOURCE_SYSTEM/>
+          <SOURCE_ID/>
+          <SOURCE_ADDRNUMBER/>
+          <DATE_FROM/>
+          <NATION/>
+          <ADDRNUMBER/>
+          <DATE_TO/>
+          <TITLE/>
+          <NAME1/>
+          <NAME2/>
+          <NAME3/>
+          <NAME4/>
+          <NAME_TEXT/>
+          <NAME_CO/>
+          <CITY1/>
+          <CITY2/>
+          <CITY_CODE/>
+          <CITYP_CODE/>
+          <HOME_CITY/>
+          <CITYH_CODE/>
+          <CHCKSTATUS/>
+          <REGIOGROUP/>
+          <POST_CODE1/>
+          <POST_CODE2/>
+          <POST_CODE3/>
+          <PCODE1_EXT/>
+          <PCODE2_EXT/>
+          <PCODE3_EXT/>
+          <PO_BOX/>
+          <DONT_USE_P/>
+          <PO_BOX_NUM/>
+          <PO_BOX_LOC/>
+          <CITY_CODE2/>
+          <PO_BOX_REG/>
+          <PO_BOX_CTY/>
+          <POSTALAREA/>
+          <TRANSPZONE/>
+          <STREET/>
+          <DONT_USE_S/>
+          <STREETCODE/>
+          <STREETABBR/>
+          <HOUSE_NUM1/>
+          <HOUSE_NUM2/>
+          <HOUSE_NUM3/>
+          <STR_SUPPL1/>
+          <STR_SUPPL2/>
+          <STR_SUPPL3/>
+          <LOCATION/>
+          <BUILDING/>
+          <FLOOR/>
+          <ROOMNUMBER/>
+          <COUNTRY/>
+          <LANGU/>
+          <REGION/>
+          <ADDR_GROUP/>
+          <FLAGGROUPS/>
+          <PERS_ADDR/>
+          <SORT1/>
+          <SORT2/>
+          <SORT_PHN/>
+          <DEFLT_COMM/>
+          <TEL_NUMBER/>
+          <TEL_EXTENS/>
+          <FAX_NUMBER/>
+          <FAX_EXTENS/>
+          <FLAGCOMM2/>
+          <FLAGCOMM3/>
+          <FLAGCOMM4/>
+          <FLAGCOMM5/>
+          <FLAGCOMM6/>
+          <FLAGCOMM7/>
+          <FLAGCOMM8/>
+          <FLAGCOMM9/>
+          <FLAGCOMM10/>
+          <FLAGCOMM11/>
+          <FLAGCOMM12/>
+          <FLAGCOMM13/>
+          <ADDRORIGIN/>
+          <MC_NAME1/>
+          <MC_CITY1/>
+          <MC_STREET/>
+          <EXTENSION1/>
+          <EXTENSION2/>
+          <TIME_ZONE/>
+          <TAXJURCODE/>
+          <ADDRESS_ID/>
+          <LANGU_CREA/>
+          <ADRC_UUID/>
+          <UUID_BELATED/>
+          <ID_CATEGORY/>
+          <ADRC_ERR_STATUS/>
+          <PO_BOX_LOBBY/>
+          <DELI_SERV_TYPE/>
+          <DELI_SERV_NUMBER/>
+          <COUNTY_CODE/>
+          <COUNTY/>
+          <TOWNSHIP_CODE/>
+          <TOWNSHIP/>
+          <MC_COUNTY/>
+          <MC_TOWNSHIP/>
+          <XPCPT/>
+          <SOURCE_RECENCY/>
+          <SOURCE_MODIFIED/>
+          <SOURCE_MODIFICATION_BLIP/>
+          <SOURCE_INDEX/>
+          <DUNS/>
+          <DUNSP4/>
+         </item>
+        </ddic:MDC_TT_BUT_ADRC_PRC>
+       </DEEP_DATA>
+      </item>
+      <item>
+       <PNAME>BUT021_FS_PRC</PNAME>
+       <PTYP>V</PTYP>
+       <PDESC>List Of Process Records For OTC 147, Table BUT021_FS</PDESC>
+       <PINDEX>0003</PINDEX>
+       <XMLREF_TYP>D</XMLREF_TYP>
+       <PSTRUC_TYP>T</PSTRUC_TYP>
+       <PREF_NAME>MDC_TT_BUT021_FS_PRC</PREF_NAME>
+       <PDATLEN>0000</PDATLEN>
+       <PINTLEN>000000</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0004</SORT_LNR>
+       <PREF_NAME2>MDC_TT_BUT021_FS_PRC</PREF_NAME2>
+       <VALUE>&lt;INITIAL&gt;</VALUE>
+       <VAL_TYPE>T</VAL_TYPE>
+       <TAB_INDEX>0</TAB_INDEX>
+       <DEEP_STRU>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.sap.com/2003/05/eCATT/ddic" version="1.0">
+         <xsd:complexType name="MDC_TT_BUT021_FS_PRC">
+          <annotation>
+           <documentation>I==O==C=T=K==D=MDC_TT_BUT021_FS_PRC=A=h=L=000000=doc=List Of Process Records For OTC 147, Table BUT021_FS</documentation>
+          </annotation>
+          <sequence>
+           <element name="item" type="BUT021_FS_PRC" minOccurs="0" maxOccurs="unbounded"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="BUT021_FS_PRC">
+          <annotation>
+           <documentation>I==O==C=S=K==D=BUT021_FS_PRC=A=u=L=000000=doc=Master Data Co</documentation>
+          </annotation>
+          <sequence>
+           <element name="CLIENT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MANDT=A=C=L=000003=doc=Client</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PROCESS_ID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_PROCESS_ID=A=N=L=000012=doc=Master Data C</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="12"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PROCESS_STEP_NO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_PROCESS_STEP_NO=A=N=L=000004=doc=Master D</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_SYSTEM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_BUSINESS_SYSTEM=A=C=L=000060=doc=Source S</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="60"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_ID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_SOURCE_ID=A=C=L=000060=doc=Master Data Co</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="60"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="VALID_TO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=BU_ADVW_VALID_TO=A=P=L=000015=doc=Validity En</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="15"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADR_KIND" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=BU_ADRKIND=A=C=L=000010=doc=Address Type</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_ADDRNUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=AD_ADDRNUM=A=C=L=000010=doc=Address Number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PARTNER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_PARTNER=A=C=L=000010=doc=Business Partner N</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ADDRNUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=AD_ADDRNUM=A=C=L=000010=doc=Address Number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="VALID_FROM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_ADVW_VALID_FROM=A=P=L=000015=doc=Validity S</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="15"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="XDFADU" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_XDFADU=A=C=L=000001=doc=Indicator: Standard</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_RECENCY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_RECENCY=A=P=L=000015=doc=Master Data Conso</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="15"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_MODIFIED" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_SOURCE_MODIFIED=A=C=L=000001=doc=Indicator</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_MODIFICATION_BLIP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_MODIFICATION_BLIP=A=X=L=000064=doc=Modific</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="base64Binary">
+              <length value="64"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_INDEX" minOccurs="0" type="int">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_SOURCE_INDEX=A=I=L=000010=doc=Index of rec</documentation>
+            </annotation>
+           </element>
+          </sequence>
+         </xsd:complexType>
+        </xsd:schema>
+       </DEEP_STRU>
+       <DEEP_DATA>
+        <ddic:MDC_TT_BUT021_FS_PRC xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic" empty="true">
+         <item>
+          <CLIENT/>
+          <PROCESS_ID/>
+          <PROCESS_STEP_NO/>
+          <SOURCE_SYSTEM/>
+          <SOURCE_ID/>
+          <VALID_TO/>
+          <ADR_KIND/>
+          <SOURCE_ADDRNUMBER/>
+          <PARTNER/>
+          <ADDRNUMBER/>
+          <VALID_FROM/>
+          <XDFADU/>
+          <SOURCE_RECENCY/>
+          <SOURCE_MODIFIED/>
+          <SOURCE_MODIFICATION_BLIP/>
+          <SOURCE_INDEX/>
+         </item>
+        </ddic:MDC_TT_BUT021_FS_PRC>
+       </DEEP_DATA>
+      </item>
+      <item>
+       <PNAME>BUT0ID_PRC</PNAME>
+       <PTYP>V</PTYP>
+       <PDESC>List Of Process Records For OTC 147, Table BUT0ID</PDESC>
+       <PINDEX>0004</PINDEX>
+       <XMLREF_TYP>D</XMLREF_TYP>
+       <PSTRUC_TYP>T</PSTRUC_TYP>
+       <PREF_NAME>MDC_TT_BUT0ID_PRC</PREF_NAME>
+       <PDATLEN>0000</PDATLEN>
+       <PINTLEN>000000</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0005</SORT_LNR>
+       <PREF_NAME2>MDC_TT_BUT0ID_PRC</PREF_NAME2>
+       <VALUE>&lt;INITIAL&gt;</VALUE>
+       <VAL_TYPE>T</VAL_TYPE>
+       <TAB_INDEX>0</TAB_INDEX>
+       <DEEP_STRU>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.sap.com/2003/05/eCATT/ddic" version="1.0">
+         <xsd:complexType name="MDC_TT_BUT0ID_PRC">
+          <annotation>
+           <documentation>I==O==C=T=K==D=MDC_TT_BUT0ID_PRC=A=h=L=000000=doc=List Of Process Records For OTC 147, Table BUT0ID</documentation>
+          </annotation>
+          <sequence>
+           <element name="item" type="BUT0ID_PRC" minOccurs="0" maxOccurs="unbounded"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="BUT0ID_PRC">
+          <annotation>
+           <documentation>I==O==C=S=K==D=BUT0ID_PRC=A=u=L=000000=doc=Master Data Conso</documentation>
+          </annotation>
+          <sequence>
+           <element name="CLIENT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MANDT=A=C=L=000003=doc=Client</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PROCESS_ID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_PROCESS_ID=A=N=L=000012=doc=Master Data C</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="12"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PROCESS_STEP_NO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_PROCESS_STEP_NO=A=N=L=000004=doc=Master D</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_SYSTEM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_BUSINESS_SYSTEM=A=C=L=000060=doc=Source S</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="60"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_ID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=MDC_SOURCE_ID=A=C=L=000060=doc=Master Data Co</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="60"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="TYPE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=BU_ID_TYPE=A=C=L=000006=doc=Identification Ty</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="6"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="IDNUMBER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K=X=D=BU_ID_NUMBER=A=C=L=000060=doc=Identification</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="60"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PARTNER" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_PARTNER=A=C=L=000010=doc=Business Partner N</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="10"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="INSTITUTE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_ID_INSTITUTE=A=C=L=000040=doc=Responsible I</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ENTRY_DATE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_ID_ENTRY_DATE=A=D=L=000008=doc=Date of Entr</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="....-..-.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="VALID_DATE_FROM" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_ID_VALID_DATE_FROM=A=D=L=000008=doc=Validit</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="....-..-.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="VALID_DATE_TO" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_ID_VALID_DATE_TO=A=D=L=000008=doc=Validity</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="....-..-.."/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="COUNTRY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_IDCOUNTRY=A=C=L=000003=doc=Country in Which</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="REGION" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=REGIO=A=C=L=000003=doc=Region (State, Province</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="IDNUMBER_GUID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BU_ID_GUID=A=X=L=000016=doc=GUID of a Business</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="base64Binary">
+              <length value="16"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BP_EEW_BUT0ID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=DUMMY=A=C=L=000001=doc=Dummy function in lengt</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_RECENCY" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_RECENCY=A=P=L=000015=doc=Master Data Conso</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="decimal">
+              <totalDigits value="15"/>
+              <fractionDigits value="0"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_MODIFIED" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_SOURCE_MODIFIED=A=C=L=000001=doc=Indicator</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_MODIFICATION_BLIP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_MODIFICATION_BLIP=A=X=L=000064=doc=Modific</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="base64Binary">
+              <length value="64"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="SOURCE_INDEX" minOccurs="0" type="int">
+            <annotation>
+             <documentation>I==O==C==K==D=MDC_SOURCE_INDEX=A=I=L=000010=doc=Index of rec</documentation>
+            </annotation>
+           </element>
+          </sequence>
+         </xsd:complexType>
+        </xsd:schema>
+       </DEEP_STRU>
+       <DEEP_DATA>
+        <ddic:MDC_TT_BUT0ID_PRC xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic" empty="true">
+         <item>
+          <CLIENT/>
+          <PROCESS_ID/>
+          <PROCESS_STEP_NO/>
+          <SOURCE_SYSTEM/>
+          <SOURCE_ID/>
+          <TYPE/>
+          <IDNUMBER/>
+          <PARTNER/>
+          <INSTITUTE/>
+          <ENTRY_DATE/>
+          <VALID_DATE_FROM/>
+          <VALID_DATE_TO/>
+          <COUNTRY/>
+          <REGION/>
+          <IDNUMBER_GUID/>
+          <BP_EEW_BUT0ID/>
+          <SOURCE_RECENCY/>
+          <SOURCE_MODIFIED/>
+          <SOURCE_MODIFICATION_BLIP/>
+          <SOURCE_INDEX/>
+         </item>
+        </ddic:MDC_TT_BUT0ID_PRC>
+       </DEEP_DATA>
+      </item>
+     </ETPAR_GUIX>
+     <ETPAR_VARI>
+      <item>
+       <VAR_NAME>SETUP</VAR_NAME>
+       <VINDEX>0002</VINDEX>
+       <SORTLNR>000002</SORTLNR>
+       <PAR_VALUES>
+        <item>
+         <PNAME>BUT000_PRC</PNAME>
+         <PTYP>V</PTYP>
+         <PINDEX>0001</PINDEX>
+         <VALUE>&lt;VALUE&gt;</VALUE>
+         <VAL_TYPE>X</VAL_TYPE>
+         <DEEP_DATA>
+          <ddic:MDC_TT_BUT000_PRC xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic">
+           <item>
+            <SOURCE_ID>2</SOURCE_ID>
+            <PARTNER>2</PARTNER>
+            <TYPE>2</TYPE>
+            <BU_GROUP>0001</BU_GROUP>
+            <BU_SORT2>MDCCAL</BU_SORT2>
+            <NAME_ORG1>Uranus Chemie AG</NAME_ORG1>
+           </item>
+           <item>
+            <SOURCE_ID>1</SOURCE_ID>
+            <PARTNER>1</PARTNER>
+            <TYPE>2</TYPE>
+            <BU_GROUP>0001</BU_GROUP>
+            <BU_SORT2>MDCCAL</BU_SORT2>
+            <NAME_ORG1>Earth Link Communication</NAME_ORG1>
+           </item>
+          </ddic:MDC_TT_BUT000_PRC>
+         </DEEP_DATA>
+        </item>
+        <item>
+         <PNAME>BUT020_PRC</PNAME>
+         <PTYP>V</PTYP>
+         <PINDEX>0002</PINDEX>
+         <VALUE>&lt;VALUE&gt;</VALUE>
+         <VAL_TYPE>X</VAL_TYPE>
+         <DEEP_DATA>
+          <ddic:MDC_TT_BUT020_PRC xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic">
+           <item>
+            <SOURCE_ID>1</SOURCE_ID>
+            <SOURCE_ADDRNUMBER>1001</SOURCE_ADDRNUMBER>
+            <PARTNER>1</PARTNER>
+            <ADDRNUMBER>1001</ADDRNUMBER>
+            <DATE_FROM>00010101</DATE_FROM>
+           </item>
+           <item>
+            <SOURCE_ID>2</SOURCE_ID>
+            <SOURCE_ADDRNUMBER>2001</SOURCE_ADDRNUMBER>
+            <PARTNER>2</PARTNER>
+            <ADDRNUMBER>2001</ADDRNUMBER>
+            <DATE_FROM>00010101</DATE_FROM>
+           </item>
+          </ddic:MDC_TT_BUT020_PRC>
+         </DEEP_DATA>
+        </item>
+        <item>
+         <PNAME>BUT_ADRC_PRC</PNAME>
+         <PTYP>V</PTYP>
+         <PINDEX>0005</PINDEX>
+         <VALUE>&lt;VALUE&gt;</VALUE>
+         <VAL_TYPE>X</VAL_TYPE>
+         <DEEP_DATA>
+          <ddic:MDC_TT_BUT_ADRC_PRC xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic">
+           <item>
+            <SOURCE_ID>1</SOURCE_ID>
+            <SOURCE_ADDRNUMBER>1001</SOURCE_ADDRNUMBER>
+            <DATE_FROM>00010101</DATE_FROM>
+            <ADDRNUMBER>1001</ADDRNUMBER>
+            <CITY1>Heilbronn</CITY1>
+            <POST_CODE1>74074</POST_CODE1>
+            <STREET>Lerchenstr</STREET>
+            <HOUSE_NUM1>17</HOUSE_NUM1>
+            <COUNTRY>DE</COUNTRY>
+            <LANGU>DE</LANGU>
+            <REGION>08</REGION>
+           </item>
+           <item>
+            <SOURCE_ID>2</SOURCE_ID>
+            <SOURCE_ADDRNUMBER>2001</SOURCE_ADDRNUMBER>
+            <DATE_FROM>00010101</DATE_FROM>
+            <ADDRNUMBER>2001</ADDRNUMBER>
+            <CITY1>Ubstadt-Weiher</CITY1>
+            <POST_CODE1>76698</POST_CODE1>
+            <STREET>Hauptstr</STREET>
+            <HOUSE_NUM1>6</HOUSE_NUM1>
+            <COUNTRY>DE</COUNTRY>
+            <LANGU>DE</LANGU>
+            <REGION>08</REGION>
+           </item>
+          </ddic:MDC_TT_BUT_ADRC_PRC>
+         </DEEP_DATA>
+        </item>
+        <item>
+         <PNAME>BUT021_FS_PRC</PNAME>
+         <PTYP>V</PTYP>
+         <PINDEX>0003</PINDEX>
+         <VALUE>&lt;VALUE&gt;</VALUE>
+         <VAL_TYPE>X</VAL_TYPE>
+         <DEEP_DATA>
+          <ddic:MDC_TT_BUT021_FS_PRC xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic">
+           <item>
+            <SOURCE_ID>1</SOURCE_ID>
+            <VALID_TO>99991231235959</VALID_TO>
+            <ADR_KIND>XXDEFAULT</ADR_KIND>
+            <SOURCE_ADDRNUMBER>1001</SOURCE_ADDRNUMBER>
+            <PARTNER>1</PARTNER>
+            <ADDRNUMBER>1001</ADDRNUMBER>
+           </item>
+           <item>
+            <SOURCE_ID>2</SOURCE_ID>
+            <VALID_TO>99991231235959</VALID_TO>
+            <ADR_KIND>XXDEFAULT</ADR_KIND>
+            <SOURCE_ADDRNUMBER>2001</SOURCE_ADDRNUMBER>
+            <PARTNER>2</PARTNER>
+            <ADDRNUMBER>2001</ADDRNUMBER>
+           </item>
+          </ddic:MDC_TT_BUT021_FS_PRC>
+         </DEEP_DATA>
+        </item>
+        <item>
+         <PNAME>BUT0ID_PRC</PNAME>
+         <PTYP>V</PTYP>
+         <PINDEX>0004</PINDEX>
+         <VALUE>&lt;VALUE&gt;</VALUE>
+         <VAL_TYPE>X</VAL_TYPE>
+         <DEEP_DATA>
+          <ddic:MDC_TT_BUT0ID_PRC xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic">
+           <item>
+            <SOURCE_ID>1</SOURCE_ID>
+            <TYPE>BUP001</TYPE>
+            <IDNUMBER>329260281</IDNUMBER>
+            <PARTNER>1</PARTNER>
+           </item>
+          </ddic:MDC_TT_BUT0ID_PRC>
+         </DEEP_DATA>
+        </item>
+       </PAR_VALUES>
+      </item>
+     </ETPAR_VARI>
+    </PARAMETERS>
+    <VARIANT_MODE>
+     <ETVAR_EXT>
+      <VAR_EXT_PATH></VAR_EXT_PATH>
+     </ETVAR_EXT>
+    </VARIANT_MODE>
+   </ECTD>
+  </VERSION>
+ </VERSIONS>
+</abapGit>

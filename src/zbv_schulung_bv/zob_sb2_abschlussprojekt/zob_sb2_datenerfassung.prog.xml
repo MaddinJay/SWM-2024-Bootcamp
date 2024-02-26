@@ -21,9 +21,9 @@
       </item>
       <item>
        <ID>S</ID>
-       <KEY>P_ANLIEG</KEY>
-       <ENTRY> Anliegen</ENTRY>
-       <LENGTH>17</LENGTH>
+       <KEY>P_ANMERK</KEY>
+       <ENTRY> Anmerkung</ENTRY>
+       <LENGTH>18</LENGTH>
       </item>
       <item>
        <ID>S</ID>
@@ -39,27 +39,27 @@
       </item>
       <item>
        <ID>S</ID>
-       <KEY>P_STATUS</KEY>
-       <ENTRY> Status</ENTRY>
-       <LENGTH>15</LENGTH>
-      </item>
-      <item>
-       <ID>S</ID>
-       <KEY>P_TECH</KEY>
-       <ENTRY> Techniker</ENTRY>
-       <LENGTH>18</LENGTH>
-      </item>
-      <item>
-       <ID>S</ID>
-       <KEY>P_TECHNR</KEY>
-       <ENTRY> Technikernummer</ENTRY>
-       <LENGTH>24</LENGTH>
-      </item>
-      <item>
-       <ID>S</ID>
        <KEY>P_TNR</KEY>
        <ENTRY> Ticketnummer</ENTRY>
        <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>R1</KEY>
+       <ENTRY> Stromausfall</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>R2</KEY>
+       <ENTRY> Zählerdefekt</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>R3</KEY>
+       <ENTRY> Zählerverwechslung</ENTRY>
+       <LENGTH>27</LENGTH>
       </item>
      </TEXTPOOL>
     </item>

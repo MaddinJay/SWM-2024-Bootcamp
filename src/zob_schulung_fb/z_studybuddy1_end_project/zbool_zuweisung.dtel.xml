@@ -5,6 +5,7 @@
    <DD04V>
     <ROLLNAME>ZBOOL_ZUWEISUNG</ROLLNAME>
     <DOMNAME>ZBBOLEAN_ZUWEISUNG</DOMNAME>
+    <HEADLEN>55</HEADLEN>
     <SCRLEN1>10</SCRLEN1>
     <SCRLEN2>20</SCRLEN2>
     <SCRLEN3>40</SCRLEN3>
@@ -17,10 +18,11 @@
    <DD04_TEXTS>
     <item>
      <DDLANGUAGE>D</DDLANGUAGE>
-     <DDTEXT>Zuwesiungsstatus Techniker</DDTEXT>
-     <SCRTEXT_S>ZuwStTechn</SCRTEXT_S>
-     <SCRTEXT_M>Zuweisg Status Techn</SCRTEXT_M>
-     <SCRTEXT_L>Zuweisungsstatus Techniker</SCRTEXT_L>
+     <DDTEXT>Zuweisungsstatus Techniker</DDTEXT>
+     <REPTEXT>Verfügbarkeitsstatus</REPTEXT>
+     <SCRTEXT_S>Verfügbar</SCRTEXT_S>
+     <SCRTEXT_M>Verfügbar</SCRTEXT_M>
+     <SCRTEXT_L>Verfügbarkeitsstatus</SCRTEXT_L>
     </item>
    </DD04_TEXTS>
   </asx:values>

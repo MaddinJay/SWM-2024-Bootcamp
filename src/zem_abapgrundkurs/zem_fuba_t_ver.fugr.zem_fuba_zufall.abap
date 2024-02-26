@@ -6,6 +6,8 @@ FUNCTION zem_fuba_zufall.
 *"     REFERENCE(IV_NAME2) TYPE  STRING
 *"     REFERENCE(IV_NAME3) TYPE  STRING
 *"     REFERENCE(IV_NAME4) TYPE  STRING
+*"  EXPORTING
+*"     REFERENCE(EV_ERG) TYPE  STRING
 *"----------------------------------------------------------------------
 DATA: BEGIN OF ls_struktur,
         name TYPE string,
@@ -30,6 +32,8 @@ DO 20 TIMES.
 ENDDO.
 
 READ TABLE lt_tabelle INDEX lv_count INTO ls_struktur.
+
+ev_erg = ls_struktur-name.
 
 IF sy-subrc = 0.
   WRITE: /, |Im Funktionsbaustein gewinnt { ls_struktur-name }|.

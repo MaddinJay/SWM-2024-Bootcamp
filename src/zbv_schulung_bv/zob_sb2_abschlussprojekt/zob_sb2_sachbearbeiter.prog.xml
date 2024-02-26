@@ -13,6 +13,13 @@
    <I18N_TPOOL>
     <item>
      <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Report für Sachbearbeiter</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+     </TEXTPOOL>
     </item>
    </I18N_TPOOL>
   </asx:values>

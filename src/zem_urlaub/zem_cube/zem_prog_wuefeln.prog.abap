@@ -45,7 +45,7 @@ START-OF-SELECTION.
 **********************************************************************
 
 **********************************************************************
-* Verarbeitung und Ergebnis durch Optionalen TIPP - Ausgabe in ABAP-LISTE
+* Verarbeitung und Ergebnis durch Optionalen Tipp - Ausgabe in ABAP-LISTE
 
 SELECTION-SCREEN BEGIN OF BLOCK spiel WITH FRAME TITLE TEXT-002.
 

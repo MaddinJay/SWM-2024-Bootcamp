@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_NROB" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <ATTRIBUTES>
+    <OBJECT>Z_NUMC_LFD</OBJECT>
+    <DOMLEN>Z_MUL_DO_ID</DOMLEN>
+    <PERCENTAGE>10.0</PERCENTAGE>
+    <BUFFER>X</BUFFER>
+    <NOIVBUFFER>00000010</NOIVBUFFER>
+    <CHANGED_AT>20240213100127.369781</CHANGED_AT>
+    <CHANGED_BY>LEARN-016</CHANGED_BY>
+    <UNAME>LEARN-006</UNAME>
+    <UDATE>2024-02-12</UDATE>
+    <UTIME>17:58:47</UTIME>
+   </ATTRIBUTES>
+   <TEXT>
+    <LANGU>E</LANGU>
+    <OBJECT>Z_NUMC_LFD</OBJECT>
+   </TEXT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

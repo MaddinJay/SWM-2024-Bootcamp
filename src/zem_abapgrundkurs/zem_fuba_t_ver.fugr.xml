@@ -148,6 +148,13 @@
        <TYP>STRING</TYP>
       </RSIMP>
      </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_ERG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
      <DOCUMENTATION>
       <RSFDO>
        <PARAMETER>IV_NAME1</PARAMETER>
@@ -163,6 +170,10 @@
       </RSFDO>
       <RSFDO>
        <PARAMETER>IV_NAME4</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_ERG</PARAMETER>
        <KIND>P</KIND>
       </RSFDO>
      </DOCUMENTATION>

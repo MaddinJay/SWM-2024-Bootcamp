@@ -75,9 +75,61 @@ REPORT zbv_wiederholung_woche01.
 *
 *
 **if ls_Kunde-alter = 10 AND ls_kunde-name = 'Test'. -> bei String wird auf Groß- und Kleinschreibung geachtet.
+*
+*SELECTION-SCREEN PUSHBUTTON 2(8) btn1 USER-COMMAND cmd1.
+*
+*INITIALIZATION.
+*  WRITE icon_execute_object TO btn1.  " Icon über WRITE in Button schreiben
+*  btn1+4 = 'Btn-Text'.
+* Eventhandler für neuen Button
 
-SELECTION-SCREEN PUSHBUTTON 2(8) btn1 USER-COMMAND cmd1.
+CLASS lcl_events DEFINITION.
+  PUBLIC SECTION.
+* Bezeichner des Buttons
+    CONSTANTS: co_btn_xl_export TYPE string VALUE 'BTN_XL_EXPORT'.
 
-INITIALIZATION.
-  WRITE icon_execute_object TO btn1.  " Icon über WRITE in Button schreiben
-  btn1+4 = 'Btn-Text'.
+    CLASS-METHODS : on_toolbar_click FOR EVENT added_function OF cl_salv_events_table
+      IMPORTING
+          e_salv_function
+          sender.
+ENDCLASS.
+
+CLASS lcl_events IMPLEMENTATION.
+  METHOD on_toolbar_click.
+    CASE e_salv_function.
+      WHEN co_btn_xl_export.
+        MESSAGE co_btn_xl_export TYPE 'S'.
+    ENDCASE.
+  ENDMETHOD.
+ENDCLASS.
+
+START-OF-SELECTION.
+
+
+  DATA: o_alv TYPE REF TO cl_salv_table.
+  DATA: it_tab TYPE table of sflight.
+
+  cl_salv_table=>factory( EXPORTING
+                            r_container = cl_gui_container=>default_screen
+                          IMPORTING
+                            r_salv_table = o_alv
+                          CHANGING
+                            t_table = it_tab ).
+
+.
+
+* Eigenen SALV-Button hinzufügen
+* das Hinzufügen des Buttons funktioniert nur, wenn die SALV-Table innerhalb eines Containers (z.B. cl_gui_container=>default_screen) eingebettet ist
+  o_alv->get_functions( )->add_function( name = |{ lcl_events=>co_btn_xl_export }|
+                                         icon = |{ ICON_EXECUTE_OBJECT }|
+                                         tooltip = 'Daten speichern'
+                                         position = if_salv_c_function_position=>right_of_salv_functions ).
+
+* Eventhandler für Klicks in die Toolbar des SALV-Grids setzen
+  SET HANDLER lcl_events=>on_toolbar_click FOR o_alv->get_event( ).
+
+* SALV anzeigen
+  o_alv->display( ).
+
+* Listausgabe erzwingen für Erzeugung von cl_gui_container=>default_screen
+  WRITE: space.

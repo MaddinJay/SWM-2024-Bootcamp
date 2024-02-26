@@ -30,7 +30,7 @@ CASE sy-subrc.
   WHEN 0.
     WRITE / 'Ergebnis passt.'.
   WHEN 1.
-    WRITE / 'Durch Null kann nicht dividiert werden'.
+    WRITE / 'Durch Null kann nicht dividiert werden.'.
   WHEN 2.
     WRITE / 'Ungültig.'.
   WHEN OTHERS.
